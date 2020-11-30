@@ -162,6 +162,11 @@ button:visited,
 .about__me__items{
   list-style-type: none;
 }
+.findme{
+  size: var(--font-size-large)
+
+}
+
 .grid__2{
   float: center;
   margin: 30px 25%;
