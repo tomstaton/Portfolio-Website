@@ -1,5 +1,5 @@
 /*
-Font: mukta, sans-serif 
+Font: mukta, sans-serif
 */
 
 * {
@@ -16,8 +16,8 @@ Font: mukta, sans-serif
   --font-size-large: 20px;
 }
 
-a { 
-  color: var(--primary-color)
+a {
+  color: var(--primary-color);
 }
 
 body {
@@ -26,69 +26,71 @@ body {
   line-height: 1.6;
 }
 
-h1{
+h1 {
   font-size: 40px;
   font-weight: 700;
 }
 
-h2{
+h2 {
   font-size: 30px;
   font-weight: 650;
 }
 
-h3{
+h3 {
   font-size: 25px;
   font-weight: 550;
 }
 
-.profile{
+.profile {
   margin: auto;
   width: 35%;
 }
 
-.profile__portrait{
-  float:left;
+.profile__portrait {
+  float: left;
 }
-p{
+
+p {
   font-size: var(--font-size-med);
   line-height: 1;
 }
 
-a:link{
+a:link {
   font-size: var(--font-size-med);
   color: var(--dark-grey);
 }
 
-a:visited{
-  color:rgb(7, 51, 7)
+a:visited {
+  color: rgb(7, 51, 7);
 }
 
-a:hover, a:focus{
-  /*hide link underline*/
+a:hover,
+a:focus {
+  /* hide link underline */
   text-decoration: none;
 }
 
-.navigation-list{
+.navigation-list {
   list-style-type: none;
 }
 
-.navigation-list li{
+.navigation-list li {
   display: inline-block;
   text-decoration: none;
 }
 
-.navigation-list__item{
+.navigation-list__item {
   text-decoration-color: var(--dark-grey);
 }
 
-.navigation-list__item--active{
+.navigation-list__item--active {
   color: var(--dark-grey);
   text-decoration: none;
   cursor: default;
 }
 
 button,
-.button{
+.button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -98,22 +100,22 @@ button,
   text-decoration: none;
   padding: 10px;
   border-radius: 7px;
-  border-bottom: 2px solid rgba(0,0,0,.7);
-  border-right: 2px solid rgba(0,0,0,.7);
-  transition: .9s opacity;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  border-right: 2px solid rgba(0, 0, 0, 0.7);
+  transition: 0.9s opacity;
 }
 
-button:hover, 
+button:hover,
 button:focus,
 button:visited,
 .button:visited,
 .button:hover,
-.button:focus{
+.button:focus {
   cursor: pointer;
-  opacity: .7;
+  opacity: 0.7;
 }
 
-.page-footer{
+.page-footer {
   clear: both;
   margin: 0 25%;
   display: flex;
@@ -121,83 +123,87 @@ button:visited,
   text-align: center;
 }
 
-.page-footer__item{
+.page-footer__item {
   text-decoration: none;
 }
 
-.page-header{
+.page-header {
   display: flex;
   width: 100%;
   border-bottom: 2px solid black;
   margin: 0;
 }
 
-.page-header__item{
+.page-header__item {
   flex: 0 1 auto;
 }
 
-.page-header__item:last-child{
+.page-header__item:last-child {
   flex-grow: 1;
-  text-align: right; 
+  text-align: right;
 }
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
-.grid__item{
+.grid__item {
   background-color: lightgray;
 }
-.mission-statement{
-  line-height: 3.0
+
+.mission-statement {
+  line-height: 3;
 }
 
-.about__me{
+.about__me {
   margin: 0 auto;
   padding-bottom: 50px;
   width: 25%;
 }
-.about__me__items{
+
+.about__me__items {
   list-style-type: none;
 }
-.findme{
-  size: var(--font-size-large)
 
+.findme {
+  size: var(--font-size-large);
 }
 
-.grid__2{
+.grid__2 {
   float: center;
   margin: 30px 25%;
 }
 
-@media all and (max-width: 500px){
- .grid{
-   grid-template-columns: 1fr;
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
- }
+}
 
-@media all and (min-width: 500px) and (max-width: 750px){
-  .grid{
-    grid-template-columns: 1fr 1fr; 
-    }
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
   }
-  
-@media all and (max-width: 750px){
-  .grid{
+}
+
+@media all and (max-width: 750px) {
+  .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-  h1 { 
+
+  h1 {
     font-size: 22px;
   }
 }
 
-.berlin-illustration{
+.berlin-illustration {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -207,35 +213,44 @@ button:visited,
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
 }
-@keyframes cloud-move{
+
+@keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
 }
-@keyframes cloud-move-reverse{
-  from { 
-    transform: translate(446px, 48px)
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
   }
-  to { 
-    transform: translate(100px, 48px)
+
+  to {
+    transform: translate(100px, 48px);
   }
 }
-.cloud-front{
+
+.cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
-.cloud-back{
+
+.cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 .sun {
   animation: 15s color-change infinite alternate linear;
 }
