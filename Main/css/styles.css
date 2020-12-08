@@ -5,6 +5,7 @@ Font: mukta, sans-serif
 * {
   box-sizing: border-box;
   margin: 10px;
+  min-width: min-content;
 }
 
 :root {
