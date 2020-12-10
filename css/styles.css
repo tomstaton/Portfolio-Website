@@ -24,6 +24,7 @@ body {
   font-family: 'mukta', sans-serif;
   font-weight: 300;
   line-height: 1.6;
+  min-width: min-content;
 }
 
 h1 {
@@ -132,6 +133,7 @@ button:visited,
   width: 100%;
   border-bottom: 2px solid black;
   margin: 0;
+  min-width: min-content;
 }
 
 .page-header__item {
