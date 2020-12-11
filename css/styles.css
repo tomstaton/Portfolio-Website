@@ -174,7 +174,8 @@ button:visited,
 }
 
 .grid__2 {
-  float: center;
+  margin: auto;
+  width: 35%;
 }
 
 @media all and (max-width: 500px) {
