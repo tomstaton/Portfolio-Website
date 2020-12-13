@@ -18,42 +18,7 @@ Font: mukta, sans-serif
 
 a {
   color: var(--primary-color);
-}
-
-body {
-  font-family: 'mukta', sans-serif;
-  font-weight: 300;
-  line-height: 1.6;
-  min-width: min-content;
-}
-
-h1 {
-  font-size: 40px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 30px;
-  font-weight: 650;
-}
-
-h3 {
-  font-size: 25px;
-  font-weight: 550;
-}
-
-.profile {
-  margin: auto;
-  width: 35%;
-}
-
-.profile__portrait {
-  float: left;
-}
-
-p {
-  font-size: var(--font-size-med);
-  line-height: 1;
+  border: none;
 }
 
 a:link {
@@ -71,13 +36,52 @@ a:focus {
   text-decoration: none;
 }
 
+p {
+  font-size: var(--font-size-med);
+  line-height: 1;
+}
+
+body {
+  font-family: 'mukta', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 650;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 550;
+}
+
+.profile {
+  flex: 1 1 auto;
+}
+
+.profile__element {
+  float: left;
+}
+
+.profile__statement {
+  line-height: 3;
+  float: right;
+}
+
 .navigation-list {
   list-style-type: none;
 }
 
 .navigation-list li {
   display: inline-block;
-  text-decoration: none;
+  margin-left: 15px;
 }
 
 .navigation-list__item {
@@ -130,10 +134,9 @@ button:visited,
 
 .page-header {
   display: flex;
-  width: 100%;
   border-bottom: 2px solid black;
-  margin: 0;
-  min-width: min-content;
+  padding: 20px;
+  width: 100%;
 }
 
 .page-header__item {
@@ -155,10 +158,6 @@ button:visited,
   background-color: lightgray;
 }
 
-.mission-statement {
-  line-height: 3;
-}
-
 .about__me {
   margin: 0 auto;
   padding-bottom: 50px;
@@ -171,11 +170,6 @@ button:visited,
 
 .findme {
   size: var(--font-size-large);
-}
-
-.grid__2 {
-  margin: auto;
-  width: 35%;
 }
 
 @media all and (max-width: 500px) {
